@@ -1,0 +1,36 @@
+body {
+    background-image: url("../images/Cool Sky.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.form-container{
+    padding:30px;
+    margin-top: 90px;
+    color:white;
+    font-size: 14px;
+}
+a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.tab{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+
+@media(max-width: 1000px){
+    body{
+
+    }
+
+    .form-container{
+        background: rgba(0,0,0,0.5);
+    }
+}

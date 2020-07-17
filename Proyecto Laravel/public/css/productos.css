@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url("../images/Cool\ Sky.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+/*/////////////////////////////////////////////*/
+.contenedor {
+    width: 100%;
+    display: flex;
+}
+/*/////////////////////////////////////////////*/
+
+.categorias {
+    width: 15%;
+}
+
+.box {
+    border-right: solid 1px rgb(189, 189, 189);
+    margin: 60px 0 60px 40px;
+    padding: 20px 30px;
+}
+.c-titulo {
+    display: flex;
+    margin: 0 0 5px 0;
+}
+.c-titulo p {
+    margin: 0 0 20px 10px;
+    font-weight: bold;
+}
+.c-opciones {
+    color: black;
+}
+.c-marcas {
+    margin: 30px 0 15px 0;
+}
+.c-marcas p {
+    margin: 0 0 0 10px;
+    font-weight: bold;
+}
+.c-marcas-opc {
+    color: black;
+}
+.c-color {
+    margin: 30px 0 15px 0;
+}
+.c-color p {
+    margin: 0 0 0 10px;
+    font-weight: bold;
+}
+.c-color-opc {
+    color: black;
+}
+.c-precio {
+    margin: 30px 0 15px 0;
+}
+.c-precio p {
+    margin: 0 0 0 10px;
+    font-weight: bold;
+}
+.c-precio-opc {
+    color: black;
+}
+.lista-img {
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+/*/////////////////////////////////////////////*/
+
+.productos {
+    width: 85%;
+    padding: 40px;
+}
+.p-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    border-bottom: rgb(189, 189, 189) solid 1px;
+}
+.p-titulo {
+    display: flex;
+    align-content: center;
+}
+.p-titulo p {
+    margin-left: 5px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.contenedor2 {
+    display: flex;
+    align-items: center;
+}
+.p-buscar {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.p-buscar input {
+    border: none;
+    margin-left: 10px;
+}
+
+.buscar {
+    width: 15px;
+}
+.pro-img {
+    width: 25px;
+}
+.carrito {
+    width: 30px;
+    padding-left: 10px;
+}
+.box2 {
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.item {
+    background-color: white;
+    padding-top: 30px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    box-sizing: border-box;
+    border: rgba(128, 128, 128, 0) solid 1px;
+    border-radius: 10px;
+}
+a:link {
+    text-decoration: none;
+}
+.item-title {
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.item-price {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+
+}
+.item:hover {
+    border: rgba(128, 128, 128, 0.664) solid 1px;
+    border-radius: 10px;
+}
+
+@media (max-width: 579px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    .categorias {
+        width: 100%;
+        border: none;
+        /* margin: 4% 0 0 0; */
+        padding: 0;
+    }
+    .box {
+        margin: 0;
+    }
+    .productos {
+        border-top: rgba(156, 155, 155, 0.623) solid 1px;
+        width: 100%;
+        margin: 0;
+        padding: 2%;
+    }
+    .item {
+        width: 200px;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 850px) {
+    .contenedor {
+        display: flex;
+    }
+    .categorias {
+        width: 30%;
+        border: none;
+        margin: 4% 0 0 0;
+        padding: 0;
+    }
+    .box {
+        margin: 0;
+    }
+    .productos {
+        width: 70%;
+        margin: 0;
+        padding: 2%;
+    }
+    .item {
+        width: 150px;
+    }
+}
+@media (min-width: 851px) and (max-width: 1400px) {
+    .categorias {
+        width: 30%;
+        border: none;
+    }
+    .productos {
+        width: 70%;
+    }
+    .item {
+        width: 210px;
+    }
+}

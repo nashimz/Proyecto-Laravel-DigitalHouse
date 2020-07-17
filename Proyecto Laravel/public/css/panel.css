@@ -1,0 +1,28 @@
+body {
+    background-image: url("../images/Cool Sky.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.cajas {
+    padding:50px 120px;
+    margin: 50px;
+    border:2px solid black;
+    border-radius:15px;
+    font-size: 20px;
+
+}
+
+a{
+    color:black;
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
